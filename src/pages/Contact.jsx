@@ -110,7 +110,7 @@ export default function Contact() {
 
                 <input type="text" placeholder="Subject" required />
 
-                <textarea rows="6" placeholder="Your Message" required></textarea>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
 
                 <motion.button 
                   whileHover={{ scale: 1.05 }}

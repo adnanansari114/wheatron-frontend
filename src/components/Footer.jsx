@@ -22,9 +22,9 @@ export default function Footer() {
             <ul className="footer-links-list">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/careers">Careers</a></li>
+              {/* <li><a href="/services">Services</a></li> */}
+              {/* <li><a href="/blog">Blog</a></li> */}
+              {/* <li><a href="/careers">Careers</a></li> */}
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>

@@ -34,7 +34,7 @@ export default function About() {
       {/* Hero */}
       <section className="about-main-hero">
         <video autoPlay muted loop playsInline className="about-hero-video">
-          <source src="/videos/about-bg.mp4" type="video/mp4" />
+          <source src="/images/about.mp4" type="video/mp4" />
         </video>
         <div className="about-hero-overlay"></div>
 
@@ -178,7 +178,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="about-final-cta">
+      {/* <section className="about-final-cta">
         <div className="container">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
@@ -194,7 +194,7 @@ export default function About() {
             </a>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

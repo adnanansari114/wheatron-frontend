@@ -3,17 +3,18 @@
 /* ============================================= */
 
 .premium-footer-light {
-  background: var(--primary);
-  padding: 100px 0 40px;
+  background: black;
+  padding: 0px 0 40px;
   border-top: 1px solid rgba(35, 158, 250, 0.1);
   margin-top: auto;
+  color: white;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .footer-company-info {
@@ -21,7 +22,7 @@
 }
 
 .footer-logo {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 900;
   color: var(--dark);
   margin-bottom: 20px;
@@ -32,7 +33,7 @@
 }
 
 .footer-desc {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--gray);
   line-height: 1.8;
 }
@@ -99,7 +100,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 24px;
   border-top: 1px solid rgba(35, 158, 250, 0.1);
   flex-wrap: wrap;
   gap: 20px;

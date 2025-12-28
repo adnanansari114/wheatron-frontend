@@ -9,7 +9,7 @@
 /* Hero */
 .about-main-hero {
   position: relative;
-  padding: 160px 0;
+  padding: 200px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -26,7 +26,9 @@
 .about-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(249,252,255,0.94), rgba(240,247,255,0.9));
+  /* background: linear-gradient(135deg, rgba(249,252,255,0.94), rgba(240,247,255,0.9)); */
+  background: black;
+  opacity: 0.4;
 }
 
 .about-hero-text {
@@ -38,33 +40,36 @@
 }
 
 .about-main-heading {
-  font-size: 4.2rem;
+  font-size: 3rem;
   font-weight: 900;
-  color: var(--dark);
+  color: var(--primary);
   margin-bottom: 24px;
 }
 
 .about-main-subheading {
-  font-size: 1.35rem;
-  color: var(--gray);
+  font-size: 1.05rem;
+  color: var(--primary);
   line-height: 1.8;
 }
 
 /* Journey - Horizontal Scroll Slider */
 .about-journey-slider {
-  padding: 140px 0;
-  background: #ffffff;
+  padding: 1px 0;
+  /* background: #ffffff; */
+  background: linear-gradient(to bottom, #ffffff, var(--primary));
 }
 
 .journey-slider-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 16px;
 }
 
 .journey-slider-title {
   font-size: 3.2rem;
   font-weight: 800;
   color: var(--dark);
+  margin: 0;
+  padding: 24px 0 0px
 }
 
 .journey-slider-note {
@@ -100,10 +105,10 @@
 .journey-connector-line {
   position: absolute;
   top: 60px;
-  left: 120px;
+  left: 200px;
   width: calc(100% - 240px);
   height: 4px;
-  background: linear-gradient(to right, var(--primary), var(--second-primary));
+  background: linear-gradient(to bottom, var(--primary), #ffffff);
   z-index: 1;
 }
 
@@ -111,7 +116,7 @@
   width: 120px;
   height: 120px;
   background: var(--white);
-  border: 6px solid var(--primary);
+  border: 6px solid black;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -123,7 +128,7 @@
 .journey-year-badge span {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--primary);
+  color: black;
 }
 
 .journey-milestone-info {
@@ -138,29 +143,30 @@
 .journey-milestone-info h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
 .journey-milestone-info p {
-  font-size: 1.1rem;
-  color: var(--gray);
-  line-height: 1.8;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.4;
 }
 
 /* Values - Floating Glow (No Box) */
 .about-values-floating {
-  padding: 140px 0;
-  background: #f0f7ff;
+  padding: 32px 0;
+  /* background: #f0f7ff; */
+  background: linear-gradient(to bottom, var(--primary), #ffffff);
 }
 
 .values-floating-header {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .values-floating-title {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: var(--dark);
 }
@@ -168,7 +174,7 @@
 .values-floating-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px;
+  gap: 12px 60px;
   justify-items: center;
 }
 
@@ -180,7 +186,8 @@
 .value-glow-ring {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, rgba(35,158,250,0.2), transparent 70%);
+  /* background: radial-gradient(circle, rgba(216, 230, 241, 0.2), transparent 70%); */
+  background: radial-gradient(circle, rgba(216, 230, 241, 0.61), transparent 90%);
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -189,10 +196,10 @@
 }
 
 .value-floating-element h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark);
-  margin: 40px 0 16px;
+  margin: 16px 0 16px;
 }
 
 .value-floating-element p {
@@ -204,8 +211,9 @@
 /* Stats - Background Image with Low Opacity */
 .about-stats-bg {
   position: relative;
-  padding: 140px 0;
+  padding: 30px 0 60px;
   overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff, var(--primary));
 }
 
 .stats-bg-layer {
@@ -230,7 +238,7 @@
   font-size: 3.2rem;
   font-weight: 800;
   color: var(--dark);
-  margin-bottom: 80px;
+  margin-bottom: 1px;
 }
 
 .stats-bg-numbers {
@@ -238,7 +246,7 @@
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+  gap: 0px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -248,17 +256,21 @@
 }
 
 .stats-bg-number {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 900;
   color: var(--primary);
-  margin-bottom: 16px;
+  margin-bottom: 1px;
+  margin-top: 40px;
 }
 
 .stats-bg-label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--dark);
   font-weight: 600;
+  margin: 0;
+  padding: 12px 0;
 }
+
 
 /* CTA */
 .about-final-cta {
