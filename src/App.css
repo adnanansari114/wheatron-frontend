@@ -1,0 +1,28 @@
+ body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+
+:root {
+  /* Primary color (main brand color) */
+  --primary: #007BFF;          /* Vibrant blue */
+  --primary-dark: #0056b3;     /* Hover/dark variant */
+  --primary-light: #e6f0ff;    /* Light background tint */
+
+  /* Secondary color (supporting/accent) */
+  --secondary: #00C4B4;        /* Teal/cyan – fresh and modern */
+  --secondary-dark: #009688;   /* Darker teal for hover */
+}
