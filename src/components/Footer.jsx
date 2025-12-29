@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-company-info">
-            <h3 className="footer-logo">The IT Talent</h3>
+            <div className="footer-logo">
+              <img src="/images/logoone.jpg" alt="" />
+            </div>
             <p className="footer-desc">
               14+ years of excellence in connecting businesses with world-class remote IT talent. 
               We specialize in AI, cloud, development, and staff augmentation.
@@ -35,15 +37,15 @@ export default function Footer() {
             <div className="contact-items">
               <div className="contact-item">
                 <Mail size={20} className="contact-icon" />
-                <a href="mailto:hello@theittalent.com">hello@theittalent.com</a>
+                <a href="mailto:hello@theittalent.com">pradeep191982@gmail.com</a>
               </div>
               <div className="contact-item">
                 <Phone size={20} className="contact-icon" />
-                <a href="tel:+919754364386">+91 97543 64386</a>
+                <a href="tel:+919754364386">+91 93019 92993</a>
               </div>
               <div className="contact-item">
                 <MapPin size={20} className="contact-icon" />
-                <span>Indore, Madhya Pradesh, India</span>
+                <span>213 Nipania Main Rd, Indore, Madhya Pradesh, India</span>
               </div>
             </div>
           </div>

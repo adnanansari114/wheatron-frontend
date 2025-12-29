@@ -67,8 +67,9 @@ export default function Header() {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-            <span className="logo-black">Whea</span>
-            <span className="logo-blue">tron</span>
+            <img src="/images/logoone.jpg" alt="" />
+            {/* <span className="logo-black">Whea</span>
+            <span className="logo-blue">tron</span> */}
           </Link>
         </div>
 
@@ -80,7 +81,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <button className="cta-button">Contact Us</button>
+        <button className="cta-button"><Link to="/contact">Contact Us</Link></button>
 
         <div 
           className="burger" 
