@@ -599,14 +599,14 @@
 .cta-video-title {
   font-size: 2.5rem;
   font-weight: 900;
-  color: var(--dark);
+  color: white;
   line-height: 1.2;
   margin-bottom: 0px;
 }
 
 .cta-video-subtitle {
   font-size: 1.15rem;
-  color: var(--gray);
+  color: white;
   line-height: 1.4;
   margin-bottom: 24px;
   max-width: 720px;

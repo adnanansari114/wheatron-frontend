@@ -1,4 +1,5 @@
 import React from "react";
+import CTASection from "../components/CTASEction";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import "./Contact.css";
@@ -125,6 +126,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <CTASection />
     </div>
   );
 }

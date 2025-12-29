@@ -56,7 +56,7 @@
 .about-journey-slider {
   padding: 1px 0;
   /* background: #ffffff; */
-  background: linear-gradient(to bottom, #ffffff, var(--primary));
+  background: linear-gradient(to bottom, var(--primary), #ffffff);
 }
 
 .journey-slider-header {
@@ -157,7 +157,7 @@
 .about-values-floating {
   padding: 32px 0;
   /* background: #f0f7ff; */
-  background: linear-gradient(to bottom, var(--primary), #ffffff);
+  background: linear-gradient(to bottom, #ffffff, var(--primary));
 }
 
 .values-floating-header {
@@ -219,25 +219,27 @@
 .stats-bg-layer {
   position: absolute;
   inset: 0;
-  background: url('/images/statsbgtwo.jpg') center/cover no-repeat;
-  filter: brightness(0.6);
+  background: url('/images/2961.jpg') center/cover no-repeat;
+  filter: brightness(0.4);
 }
 
 .about-stats-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(255, 255, 255, 0.85); */
   z-index: 1;
+  color: black;
+  opacity: 0.4;
 }
 
 .stats-bg-title {
   position: relative;
   z-index: 2;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: var(--dark);
+  color: white;
   margin-bottom: 1px;
 }
 
@@ -265,7 +267,8 @@
 
 .stats-bg-label {
   font-size: 1.1rem;
-  color: var(--dark);
+  /* color: var(--dark); */
+  color: var(--primary);
   font-weight: 600;
   margin: 0;
   padding: 12px 0;
