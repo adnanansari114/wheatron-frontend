@@ -40,14 +40,14 @@
   position: relative;
   z-index: 2;
   text-align: left;
-  max-width: 600px;
+  max-width: 630px;
   margin: 0 auto;
   /* padding: 0 5px; */
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
   margin-top: 0;
@@ -61,7 +61,7 @@
 }
 
 .highlight {
-  font-size: 4rem;
+  font-size: 2.5rem;
   background: linear-gradient(120deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
@@ -69,11 +69,11 @@
 }
 
 .hero-desc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
   line-height: 1.4;
   /* margin-bottom: 40px; */
-  max-width: 650px;
+  /* max-width: 650px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -240,8 +240,8 @@
 }
 
 .service-icon-wrapper {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   background: linear-gradient(135deg, var(--primary), var(--second-primary));
   border-radius: 24px;
   display: grid;
@@ -252,14 +252,14 @@
 }
 
 .service-title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
-  margin-bottom: 16px;
+  margin-bottom: 1px;
 }
 
 .service-desc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--gray);
   line-height: 1.3;
 }

@@ -13,8 +13,7 @@ export default function Footer() {
               <img src="/images/logoone.jpg" alt="" />
             </div>
             <p className="footer-desc">
-              14+ years of excellence in connecting businesses with world-class remote IT talent. 
-              We specialize in AI, cloud, development, and staff augmentation.
+              Wheatron Technologies is a global IT staffing partner helping businesses scale faster with the right people. With over 18 years of expertise, we specialize in C2C, full-time, and contract hiring.
             </p>
           </div>
 
@@ -37,7 +36,7 @@ export default function Footer() {
             <div className="contact-items">
               <div className="contact-item">
                 <Mail size={20} className="contact-icon" />
-                <a href="mailto:hello@theittalent.com">pradeep191982@gmail.com</a>
+                <a href="mailto:hello@theittalent.com">pradeep@wheatrontechnologies.com</a>
               </div>
               <div className="contact-item">
                 <Phone size={20} className="contact-icon" />
@@ -45,7 +44,7 @@ export default function Footer() {
               </div>
               <div className="contact-item">
                 <MapPin size={20} className="contact-icon" />
-                <span>213 Nipania Main Rd, Indore, Madhya Pradesh, India</span>
+                <span>213 Landlord State Colony, Nipania Road, Indore, India</span>
               </div>
             </div>
           </div>
@@ -53,11 +52,11 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
-          <p>&copy; 2025 The IT Talent. All rights reserved.</p>
+          <p>&copy; 2025 Wheatron. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="/privacy">Privacy Policy</a>
+            <a href="">Privacy Policy</a>
             <span className="separator">•</span>
-            <a href="/terms">Terms of Service</a>
+            <a href="">Terms of Service</a>
           </div>
         </div>
       </div>

@@ -102,15 +102,15 @@
   position: relative;
 }
 
-.journey-connector-line {
+/* .journey-connector-line {
   position: absolute;
   top: 60px;
-  left: 200px;
+  left: 100px;
   width: calc(100% - 240px);
   height: 4px;
   background: linear-gradient(to bottom, var(--primary), #ffffff);
   z-index: 1;
-}
+} */
 
 .journey-year-badge {
   width: 120px;
@@ -135,16 +135,18 @@
   background: rgba(255,255,255,0.9);
   border-radius: 28px;
   padding: 40px;
-  max-width: 400px;
+  max-width: 500px;
+  height: 150px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   border: 1px solid rgba(35,158,250,0.1);
 }
 
 .journey-milestone-info h3 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 16px;
+  margin-top: 10px;
 }
 
 .journey-milestone-info p {
@@ -172,9 +174,11 @@
 }
 
 .values-floating-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px 60px;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 72px 60px;
   justify-items: center;
 }
 
@@ -374,5 +378,208 @@
   }
   .stats-bg-numbers {
     grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+/* ============================================= */
+/*         WHO WE ARE - PREMIUM & MAZEDAAR       */
+/* ============================================= */
+
+.who-we-are-section {
+  padding: 0px 0;
+  background: linear-gradient(to bottom, #ffffff, var(--primary));
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background pattern */
+.who-we-are-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(35,158,250,0.08) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(76,201,240,0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.who-we-are-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.who-we-are-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 32px;
+  /* margin-top: 32px; */
+  position: relative;
+  display: inline-block;
+}
+
+.who-we-are-title::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary), var(--second-primary));
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(35,158,250,0.6);
+}
+
+.who-we-are-desc {
+  font-size: 1.05rem;
+  color: var(--gray);
+  line-height: 1.9;
+  max-width: 850px;
+  margin: 0 auto 24px;
+  font-weight: 500;
+}
+
+/* Mission & Vision Cards - Floating Glass Magic */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 80px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.mission-card,
+.vision-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 25px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(35, 158, 250, 0.2);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.08),
+    0 0 40px rgba(35, 158, 250, 0.1);
+}
+
+.mission-card::before,
+.vision-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(35,158,250,0.05) 0%, 
+    rgba(76,201,240,0.05) 100%);
+  border-radius: 40px;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+}
+
+.mission-card:hover::before,
+.vision-card:hover::before {
+  opacity: 1;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-25px) scale(1.02);
+  box-shadow: 
+    0 40px 80px rgba(35, 158, 250, 0.2),
+    0 0 60px rgba(76, 201, 240, 0.15);
+  border-color: rgba(76, 201, 240, 0.4);
+}
+
+.mv-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 32px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.mv-title::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+.mv-desc {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Responsive - Maza Mobile Pe Bhi */
+@media (max-width: 992px) {
+  .who-we-are-title {
+    font-size: 3.2rem;
+  }
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .mission-card,
+  .vision-card {
+    padding: 50px 40px;
+  }
+  .mv-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are-section {
+    padding: 120px 0;
+  }
+  .who-we-are-title {
+    font-size: 2.9rem;
+  }
+  .who-we-are-desc {
+    font-size: 1.25rem;
+    margin-bottom: 80px;
+  }
+  .mission-card,
+  .vision-card {
+    padding: 40px 30px;
+    border-radius: 32px;
+  }
+  .mv-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .who-we-are-title {
+    font-size: 2.6rem;
+  }
+  .who-we-are-desc {
+    font-size: 1.15rem;
+  }
+  .mission-card,
+  .vision-card {
+    padding: 36px 24px;
+  }
+  .mv-title {
+    font-size: 2rem;
   }
 }

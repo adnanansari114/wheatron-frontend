@@ -2,11 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Zap, Shield, Globe, CheckCircle } from "lucide-react";
 
+
 const features = [
-  { icon: Zap, title: "Fast Onboarding", desc: "Talent starts contributing within 1 week" },
-  { icon: Shield, title: "Vetted Experts", desc: "Only senior engineers with proven track record" },
-  { icon: Globe, title: "Global Talent", desc: "Access top developers worldwide" },
-  { icon: CheckCircle, title: "Risk-Free Trial", desc: "2-week trial with no obligation" }
+  { icon: Zap, title: "15+ Years of Multidisciplinary IT Expertise" },
+  { icon: Shield, title: "Trusted by Startups, SMEs, and Global Enterprises" },
+  { icon: Globe, title: "End-to-End Consulting: Strategy → Execution → Support" },
+  { icon: CheckCircle, title: "Cost-Optimized, High-Quality Delivery" },
+  { icon: Zap, title: "Transparent Processes & Strong Communication" },
 ];
 
 export default function FeaturesSection() {
@@ -19,7 +21,7 @@ export default function FeaturesSection() {
           transition={{ duration: 0.8 }}
           className="features-header"
         >
-          <h2 className="features-title">Why Companies Choose Us</h2>
+          <h2 className="features-title">Why Choose Wheatron Technologies?</h2>
         </motion.div>
 
         <div className="features-floating-list">
@@ -62,7 +64,7 @@ export default function FeaturesSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.2 + 0.5 }}
                 >
-                  {feature.desc}
+                  {/* {feature.desc} */}
                 </motion.p>
               </motion.div>
             );

@@ -28,7 +28,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Grow Faster
+              Empowering Businesses with
             </motion.span>
             <motion.span 
               initial={{ opacity: 0, y: 30 }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="highlight"
             >
-              With Top Talent
+              Smart IT Consulting & Modern Technology Solutions
             </motion.span>
           </motion.h1>
 
@@ -47,7 +47,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="hero-desc"
           >
-            Senior developers and specialists ready to join your team and deliver results.
+            At Wheatron Technologies, we help companies transform their ideas into scalable, efficient, and future-ready digital systems. From IT strategy to development, optimization, and long-term support — we guide you through the entire technology lifecycle.
           </motion.p>
 
           {/* Buttons */}
@@ -58,7 +58,7 @@ export default function HeroSection() {
             className="hero-btns"
           >
             <a href="/contact" className="btn-main">
-              Get Started <ArrowRight size={18} className="arrow" />
+              Contact Us <ArrowRight size={18} className="arrow" />
             </a>
             <a href="/services" className="btn-outline">
               Our Services

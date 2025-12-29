@@ -4,22 +4,30 @@ import { ArrowRight } from "lucide-react";
 import "./About.css";
 
 export default function About() {
+
+
   const journey = [
-    { year: "2011", title: "Foundation", desc: "Started as a small team passionate about solving complex IT challenges with clean code." },
-    { year: "2015", title: "Global Expansion", desc: "Began serving clients across USA, Europe, and Middle East with remote talent." },
-    { year: "2018", title: "Cloud Expertise", desc: "Deep dive into AWS, Azure, GCP — building scalable and secure infrastructure." },
-    { year: "2021", title: "AI Revolution", desc: "Launched dedicated AI/ML division for intelligent, data-driven solutions." },
-    { year: "2024", title: "Enterprise Scale", desc: "Partnered with Fortune 500 companies for large-scale digital transformation." },
-    { year: "Today", title: "Future Ready", desc: "14+ years of excellence in talent, technology, and transformation." }
+    { year: "Wheatron Technologies", title: "Strong technology expertise across cloud, AI, automation, and modern frameworks", desc: "is a next-generation IT consultancy helping businesses unlock growth with the right technology choices. We work as a strategic partner, understanding your business challenges, designing smart solutions, and ensuring seamless execution." },
+    { year: "Mission", title: "Flexible business models", desc: "To deliver intelligent, scalable, and efficient IT solutions that enable organizations to innovate faster, operate smarter, and achieve sustainable growth." },
+    { year: "Vision", title: "Proven ability to deliver both short-term and long-term projects", desc: "To become a globally trusted IT consulting partner known for quality, transparency, and technological excellence." },
+    { year: "Vision", title: "Customer-first mindset", desc: "To become a globally trusted IT consulting partner known for quality, transparency, and technological excellence." },
   ];
+  // const journey = [
+  //   { year: "2011", title: "Foundation", desc: "Started as a small team passionate about solving complex IT challenges with clean code." },
+  //   { year: "2015", title: "Global Expansion", desc: "Began serving clients across USA, Europe, and Middle East with remote talent." },
+  //   { year: "2018", title: "Cloud Expertise", desc: "Deep dive into AWS, Azure, GCP — building scalable and secure infrastructure." },
+  //   { year: "2021", title: "AI Revolution", desc: "Launched dedicated AI/ML division for intelligent, data-driven solutions." },
+  //   { year: "2024", title: "Enterprise Scale", desc: "Partnered with Fortune 500 companies for large-scale digital transformation." },
+  //   { year: "Today", title: "Future Ready", desc: "14+ years of excellence in talent, technology, and transformation." }
+  // ];
 
   const values = [
-    { title: "Innovation", desc: "Always exploring new technologies to solve real problems" },
-    { title: "Speed", desc: "Fast delivery without compromising quality" },
-    { title: "Reliability", desc: "Solutions you can trust completely" },
-    { title: "Results", desc: "Focused on measurable business outcomes" },
-    { title: "Global", desc: "Connecting world-class talent across borders" },
-    { title: "Integrity", desc: "Honest, transparent, and ethical in everything" }
+    { title: "Transparency", desc: "Clear processes and honest communication." },
+    { title: "Innovation", desc: "Delivering future-ready solutions." },
+    { title: "Quality", desc: "Every solution meets global standards." },
+    { title: "Commitment", desc: "We take ownership of our client's success." },
+    { title: "Collaboration", desc: "Working together for impactful outcomes." }
+    // { title: "Integrity", desc: "Honest, transparent, and ethical in everything" }
   ];
 
   const stats = [
@@ -39,28 +47,87 @@ export default function About() {
         <div className="about-hero-overlay"></div>
 
         <div className="container">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="about-hero-text"
           >
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
               className="about-main-heading"
             >
-              About The IT Talent
+              About Wheatron Technologies
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
               className="about-main-subheading"
             >
-              14+ years of building digital excellence — one project at a time.
+              We work as a strategic partner, understanding your business challenges, designing smart solutions, and ensuring seamless execution.
             </motion.p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Who We Are Section */}
+      <section className="who-we-are-section">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="who-we-are-content"
+          >
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className="who-we-are-title"
+            >
+              Who We Are
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="who-we-are-desc"
+            >
+              Wheatron Technologies is a next-generation IT consultancy helping businesses unlock growth with the right technology choices. We work as a strategic partner, understanding your business challenges, designing smart solutions, and ensuring seamless execution.
+            </motion.p>
+
+            <div className="mission-vision-grid">
+              <motion.div
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.7 }}
+                whileHover={{ y: -15 }}
+                className="mission-card"
+              >
+                <h3 className="mv-title">Mission</h3>
+                <p className="mv-desc">
+                  To deliver intelligent, scalable, and efficient IT solutions that enable organizations to innovate faster, operate smarter, and achieve sustainable growth.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.9 }}
+                whileHover={{ y: -15 }}
+                className="vision-card"
+              >
+                <h3 className="mv-title">Vision</h3>
+                <p className="mv-desc">
+                  To become a globally trusted IT consulting partner known for quality, transparency, and technological excellence.
+                </p>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -68,7 +135,7 @@ export default function About() {
       {/* Journey - Horizontal Scroll Slider */}
       <section className="about-journey-slider">
         <div className="container">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -90,12 +157,12 @@ export default function About() {
                   className="journey-milestone-card"
                 >
                   {i < journey.length - 1 && <div className="journey-connector-line"></div>}
-                  <div className="journey-year-badge">
-                    <span>{item.year}</span>
-                  </div>
+                  {/* <div className="journey-year-badge"> */}
+                    {/* <span>{item.year}</span> */}
+                  {/* </div> */}
                   <div className="journey-milestone-info">
                     <h3>{item.title}</h3>
-                    <p>{item.desc}</p>
+                    {/* <p>{item.desc}</p> */}
                   </div>
                 </motion.div>
               ))}
@@ -107,7 +174,7 @@ export default function About() {
       {/* Values - Floating Glow Icons (No Box) */}
       <section className="about-values-floating">
         <div className="container">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -127,9 +194,9 @@ export default function About() {
                 viewport={{ once: true }}
                 className="value-floating-element"
               >
-                <motion.div 
+                <motion.div
                   className="value-glow-ring"
-                  animate={{ 
+                  animate={{
                     boxShadow: [
                       "0 0 30px rgba(35,158,250,0.3)",
                       "0 0 60px rgba(76,201,240,0.5)",
@@ -150,7 +217,7 @@ export default function About() {
       <section className="about-stats-bg">
         <div className="stats-bg-layer"></div>
         <div className="container">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
