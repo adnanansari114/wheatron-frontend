@@ -1,5 +1,5 @@
 import React from "react";
-import CTASection from "../components/CTASEction";
+import CTASection from "../components/CTASection";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import "./Contact.css";
