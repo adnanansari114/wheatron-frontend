@@ -1,0 +1,137 @@
+/* ============================================= */
+/*               PRIVACY POLICY PAGE            */
+/* ============================================= */
+
+.privacy-page {
+  background: #f9fcff;
+  min-height: 100vh;
+}
+
+/* Hero */
+.privacy-hero {
+  position: relative;
+  padding: 100px 0 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f7ff, #e0f2fe);
+}
+
+.privacy-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.privacy-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.privacy-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 0px;
+  margin-top: 24px;
+}
+
+.privacy-subtitle {
+  font-size: 1.35rem;
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+/* Main Content */
+.privacy-content-section {
+  padding: 0px 0 20px;
+}
+
+.privacy-main-text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: var(--dark);
+}
+
+.privacy-main-text h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0px;
+}
+
+.privacy-main-text h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 16px 0 16px;
+}
+
+.privacy-main-text p {
+  font-size: 1.15rem;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+
+.privacy-main-text ul {
+  padding-left: 40px;
+  margin: 16px 0;
+}
+
+.privacy-main-text li {
+  font-size: 1.15rem;
+  color: var(--gray);
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.privacy-main-text li::before {
+  content: "•";
+  color: var(--primary);
+  position: absolute;
+  left: -20px;
+  font-weight: bold;
+}
+
+.privacy-intro {
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 60px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .privacy-title {
+    font-size: 3.6rem;
+  }
+  .privacy-main-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-hero {
+    padding: 140px 0;
+  }
+  .privacy-content-section {
+    padding: 100px 0;
+  }
+  .privacy-title {
+    font-size: 3.2rem;
+  }
+  .privacy-main-text h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-title {
+    font-size: 2.8rem;
+  }
+  .privacy-main-text h2 {
+    font-size: 1.8rem;
+  }
+}

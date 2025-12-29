@@ -3,18 +3,19 @@ import CTASection from "../components/CTASection";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import "./Contact.css";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
   return (
     <div className="contact-page-light">
       {/* Hero Section with Video Background */}
       <section className="contact-hero">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className="contact-video-bg" 
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="contact-video-bg"
         >
           <source src="/images/contact.mp4" type="video/mp4" />
           Your browser does not support video.
@@ -23,13 +24,13 @@ export default function Contact() {
         <div className="contact-overlay"></div>
 
         <div className="container">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="contact-hero-content"
           >
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -37,7 +38,7 @@ export default function Contact() {
             >
               Get in Touch
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -54,7 +55,7 @@ export default function Contact() {
         <div className="container">
           <div className="contact-grid">
             {/* Contact Details */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -66,7 +67,7 @@ export default function Contact() {
                 Reach out to us anytime. We're ready to discuss your project.
               </p>
 
-              <div className="contact-details-list">
+              <div className="contact-details-list">a
                 <div className="contact-detail-item">
                   <Mail size={24} className="detail-icon" />
                   <div>
@@ -94,7 +95,7 @@ export default function Contact() {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -103,7 +104,7 @@ export default function Contact() {
             >
               <h2 className="form-title">Send us a Message</h2>
 
-              <form className="contact-form">
+              {/* <form className="contact-form">
                 <div className="form-row">
                   <input type="text" placeholder="Your Name" required />
                   <input type="email" placeholder="Your Email" required />
@@ -117,6 +118,30 @@ export default function Contact() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit" 
+                  className="submit-btn"
+                >
+                  Send Message <Send className="send-icon" size={20} />
+                </motion.button>
+              </form> */}
+
+              <form
+                action="https://formspree.io/f/xzdbyzbi"  // <-- Yaha tera endpoint daal
+                method="POST"
+                className="contact-form"
+              >
+                <div className="form-row">
+                  <input type="text" name="name" placeholder="Your Name" required />
+                  <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+
+                <input type="text" name="subject" placeholder="Subject" required />
+
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
                   className="submit-btn"
                 >
                   Send Message <Send className="send-icon" size={20} />

@@ -5,8 +5,8 @@ import statsbgone from "../../public/images/statsbgone.jpg"; // Image import for
 const stats = [
   { value: 200, suffix: "+", label: "Happy Clients" },
   { value: 98, suffix: "%", label: "Retention Rate" },
-  { value: 14, suffix: "+", label: "Years Experience" },
-  { value: 500, suffix: "+", label: "Projects Delivered" }
+  { value: 18, suffix: "+", label: "Years Experience" },
+  // { value: 500, suffix: "+", label: "Projects Delivered" }
 ];
 
 export default function StatsSection() {

@@ -33,8 +33,8 @@ export default function About() {
   const stats = [
     { number: "200+", label: "Happy Clients" },
     { number: "98%", label: "Retention Rate" },
-    { number: "14+", label: "Years Experience" },
-    { number: "500+", label: "Projects Delivered" }
+    { number: "18+", label: "Years Experience" },
+    // { number: "500+", label: "Projects Delivered" }
   ];
 
   return (
@@ -262,6 +262,80 @@ export default function About() {
           </motion.div>
         </div>
       </section> */}
+
+      {/* Certifications Section */}
+<section className="certifications-section">
+  <div className="container">
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="certs-header"
+    >
+      <h2 className="certs-title">Certifications & Compliance</h2>
+      <p className="certs-subtitle">
+        We maintain the highest standards of quality, security, and professionalism
+      </p>
+    </motion.div>
+
+    <div className="certs-grid">
+      <motion.div 
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        whileHover={{ y: -20, scale: 1.05 }}
+        viewport={{ once: true }}
+        className="cert-card"
+      >
+        <div className="cert-check">✔</div>
+        <h3>ISO 9001</h3>
+        <p>Quality Management System</p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        whileHover={{ y: -20, scale: 1.05 }}
+        viewport={{ once: true }}
+        className="cert-card"
+      >
+        <div className="cert-check">✔</div>
+        <h3>ISO 27001</h3>
+        <p>Information Security Management</p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+        whileHover={{ y: -20, scale: 1.05 }}
+        viewport={{ once: true }}
+        className="cert-card"
+      >
+        <div className="cert-check">✔</div>
+        <h3>MSME Registered</h3>
+        <p>Government of India Recognition</p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8 }}
+        whileHover={{ y: -20, scale: 1.05 }}
+        viewport={{ once: true }}
+        className="cert-card"
+      >
+        <div className="cert-check">✔</div>
+        <h3>Cloud Certified Team</h3>
+        <p>AWS, Azure & GCP Experts</p>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
+
     </div>
   );
 }

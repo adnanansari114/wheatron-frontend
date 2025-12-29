@@ -23,9 +23,6 @@ export default function Footer() {
             <ul className="footer-links-list">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
-              {/* <li><a href="/services">Services</a></li> */}
-              {/* <li><a href="/blog">Blog</a></li> */}
-              {/* <li><a href="/careers">Careers</a></li> */}
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -36,11 +33,11 @@ export default function Footer() {
             <div className="contact-items">
               <div className="contact-item">
                 <Mail size={20} className="contact-icon" />
-                <a href="mailto:hello@theittalent.com">pradeep@wheatrontechnologies.com</a>
+                <a href="mailto:pradeep@wheatrontechnologies.com">pradeep@wheatrontechnologies.com</a>
               </div>
               <div className="contact-item">
                 <Phone size={20} className="contact-icon" />
-                <a href="tel:+919754364386">+91 93019 92993</a>
+                <a href="tel:+919301992993">+91 93019 92993</a>
               </div>
               <div className="contact-item">
                 <MapPin size={20} className="contact-icon" />
@@ -50,13 +47,33 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* NEW: Certifications Section */}
+        <div className="footer-certifications-row">
+          <div className="cert-item-footer">
+            <span className="cert-checkmark">✔</span>
+            <span>ISO 9001</span>
+          </div>
+          <div className="cert-item-footer">
+            <span className="cert-checkmark">✔</span>
+            <span>ISO 27001</span>
+          </div>
+          <div className="cert-item-footer">
+            <span className="cert-checkmark">✔</span>
+            <span>MSME</span>
+          </div>
+          <div className="cert-item-footer">
+            <span className="cert-checkmark">✔</span>
+            <span>Cloud Certified Team (AWS/Azure/GCP)</span>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <p>&copy; 2025 Wheatron. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
             <span className="separator">•</span>
-            <a href="">Terms of Service</a>
+            <a href="/terms">Terms of Service</a>
           </div>
         </div>
       </div>
