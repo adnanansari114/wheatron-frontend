@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -57,12 +58,14 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 1.1 }}
             className="hero-btns"
           >
-            <a href="/contact" className="btn-main">
+            {/* <a href="/contact" className="btn-main">
               Contact Us <ArrowRight size={18} className="arrow" />
-            </a>
-            <a href="/services" className="btn-outline">
+            </a> */}
+            <button className="cta-main"><Link to="/contact">Contact Us</Link></button>
+            {/* <a href="/services" className="btn-outline">
               Our Services
-            </a>
+            </a> */}
+            <button className="cta-outline"><Link to="/services">Our Services</Link></button>
           </motion.div>
         </motion.div>
       </div>
