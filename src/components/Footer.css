@@ -131,46 +131,30 @@
 
 /* Responsive */
 @media (max-width: 992px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-  .footer-company-info {
-    grid-column: span 2;
-  }
 }
 
 @media (max-width: 768px) {
-  .premium-footer-light {
-    padding: 80px 0 30px;
-  }
-  .footer-grid {
+  .footer-grid{
     grid-template-columns: 1fr;
-    gap: 50px;
   }
-  .footer-company-info {
-    grid-column: auto;
-    text-align: center;
-    max-width: none;
+  .footer-grid{
+    gap: 0;
   }
-  .footer-bottom-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
+  .footer-desc{
+    font-size: 0.8rem;
+    margin-bottom: 8px;
   }
-  .footer-legal {
-    justify-content: center;
+  .footer-links-title, .footer-contact-title{
+    font-size: 1.2rem;
+    margin-top: 16px;
+  }
+  .footer-links-list{
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .footer-logo {
-    font-size: 2.2rem;
-  }
-  .footer-links-title,
-  .footer-contact-title {
-    font-size: 1.5rem;
-  }
+  
 }
 
 
@@ -220,8 +204,9 @@
 @media (max-width: 768px) {
   .footer-certifications-row {
     gap: 30px;
-    padding: 40px 0;
-    margin: 50px 0 30px;
+    padding: 0px 0;
+    margin: 32px 0 30px;
+    align-items: start;
   }
   .cert-item-footer {
     font-size: 1rem;

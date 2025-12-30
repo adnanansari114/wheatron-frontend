@@ -67,7 +67,7 @@ export default function Contact() {
                 Reach out to us anytime. We're ready to discuss your project.
               </p>
 
-              <div className="contact-details-list">a
+              <div className="contact-details-list">
                 <div className="contact-detail-item">
                   <Mail size={24} className="detail-icon" />
                   <div>

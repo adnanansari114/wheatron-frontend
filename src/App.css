@@ -26,3 +26,10 @@
   --secondary: #00C4B4;        /* Teal/cyan – fresh and modern */
   --secondary-dark: #009688;   /* Darker teal for hover */
 }
+
+
+@media (max-width: 768px){
+  .container {
+    padding: 0 15px;
+  } 
+}

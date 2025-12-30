@@ -140,6 +140,12 @@
 }
 
 @media (max-width: 768px) {
+  .header{
+    position: relative;
+    width: 100%;
+    background: black;
+
+  }
   .nav ul {
     display: none;
   }

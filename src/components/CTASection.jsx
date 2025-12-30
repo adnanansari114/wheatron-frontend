@@ -65,7 +65,7 @@ export default function CTASection() {
               }}
               whileTap={{ scale: 0.98 }}
             >
-              Start Your Project 
+              Contact Us 
               <ArrowRight className="cta-video-arrow" size={22} />
             </motion.a>
           </motion.div>
