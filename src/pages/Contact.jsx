@@ -72,7 +72,7 @@ export default function Contact() {
                   <Mail size={24} className="detail-icon" />
                   <div>
                     <p className="detail-label">Email</p>
-                    <a href="mailto:hello@theittalent.com">hello@theittalent.com</a>
+                    <a href="mailto:hello@theittalent.com">hello@wheateron.com</a>
                   </div>
                 </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                   <Phone size={24} className="detail-icon" />
                   <div>
                     <p className="detail-label">Phone</p>
-                    <a href="tel:+919754364386">+91 97543 64386</a>
+                    <a href="tel:+919754364386">+91 93019 92993</a>
                   </div>
                 </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                   <MapPin size={24} className="detail-icon" />
                   <div>
                     <p className="detail-label">Location</p>
-                    <p>Indore, Madhya Pradesh, India</p>
+                    <p>213 Landlord State Colony, Nipania Road, Indore, India</p>
                   </div>
                 </div>
               </div>
