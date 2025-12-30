@@ -56,8 +56,8 @@ export default function CTASection() {
             viewport={{ once: true }}
             className="cta-video-action"
           >
-            <motion.a 
-              href="/contact" 
+            <motion.Link
+              to="/contact" 
               className="cta-video-btn"
               whileHover={{ 
                 scale: 1.08, 
@@ -67,7 +67,7 @@ export default function CTASection() {
             >
               Contact Us 
               <ArrowRight className="cta-video-arrow" size={22} />
-            </motion.a>
+            </motion.Link>
           </motion.div>
         </motion.div>
       </div>

@@ -70,7 +70,7 @@ export default function Header() {
             <img src="/images/logoone.jpg" alt="" />
             {/* <span className="logo-black">Whea</span>
             <span className="logo-blue">tron</span> */}
-          </Link>
+          </Link> 
         </div>
 
         <nav className={`nav ${isMobileMenuOpen ? "open" : ""}`}>

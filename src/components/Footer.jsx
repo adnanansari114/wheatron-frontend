@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import "./Footer.css";
 
@@ -71,9 +72,9 @@ export default function Footer() {
         <div className="footer-bottom-bar">
           <p>&copy; 2025 Wheatron. All rights reserved.</p>
           <div className="footer-legal">
-            <a href="/privacy">Privacy Policy</a>
+            <Link to="/privacy">Privacy Policy</Link>
             <span className="separator">•</span>
-            <a href="/terms">Terms of Service</a>
+            <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
       </div>
