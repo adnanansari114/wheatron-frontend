@@ -33,3 +33,8 @@
     padding: 0 15px;
   } 
 }
+
+button{
+  background: none;
+  border: none;
+}

@@ -475,6 +475,46 @@
 .cta-video-btn:hover .cta-video-arrow {
   transform: translateX(10px);
 }
+.cta-main{
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 16px 52px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  box-shadow: 0 15px 40px rgba(35,158,250,0.25);
+  margin-bottom: 40px;
+}
+.cta-main:hover {
+  /* background: var(--primary-hover); */
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(35,158,250,0.35);
+} 
+.cta-main a{
+  text-decoration: none;
+  color: white;
+}
+.cta-outline{
+  padding: 16px 52px;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  margin-bottom: 40px;
+} 
+.cta-outline:hover {
+  color: white;
+}
+.cta-outline a{
+  text-decoration: none;
+  color: var(--primary);
+}
 
 @media (max-width: 768px) {
   .hero-title{

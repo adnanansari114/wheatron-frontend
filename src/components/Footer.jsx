@@ -72,9 +72,9 @@ export default function Footer() {
         <div className="footer-bottom-bar">
           <p>&copy; 2025 Wheatron. All rights reserved.</p>
           <div className="footer-legal">
-            <Link to="/privacy">Privacy Policy</Link>
+            <button><Link to="/privacy">Privacy Policy</Link></button>
             <span className="separator">•</span>
-            <Link to="/terms">Terms of Service</Link>
+            <button><Link to="/terms">Terms of Service</Link></button>
           </div>
         </div>
       </div>
